@@ -33,7 +33,7 @@ public class MicroserviceTest extends TestcontainersPostgresInitializer {
         mockMvc = MockMvcBuilders
                 .webAppContextSetup(ctx)
                 .alwaysExpect(status().isOk())
-                .alwaysExpect(content().contentType("application/json;charset=UTF-8"))
+                .alwaysExpect(content().contentType("application/json"))
                 .build();
     }
 
